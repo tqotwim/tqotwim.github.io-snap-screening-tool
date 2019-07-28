@@ -1,0 +1,191 @@
+:root {
+    --container-bg-color: #333;
+    --left-bg-color: rgba(223,39,39, 0.7);
+    --left-button-hover-color: rgba(161,11,11,0.3);
+    --right-bg-color: rgba(178,153,153, 0.8);
+    --right-button-hover-color: rgba(92,92,92,0.3);
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 1000ms;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    
+    
+}
+h1 {
+    font-family: 'Covered By Your Grace', cursive, sans-serif;
+    font-size: 5rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+p {
+  font-family: 'Ubuntu';
+  color: #fff;
+  font-size: 1rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+
+}
+button {
+    display: block;
+    
+    top: 40%;
+    height: 3rem;
+    padding: 1.3rem, 0rem;
+    text-align: center;
+    background: none;
+    color: #fff;
+    border: #fff solid 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+button.threeColumns {
+  width: 10rem;
+}
+.button:focus {
+  outline: none;
+}
+.split.left .button:hover {
+    background-color: var(--left-button-hover-color);
+    border-color: var(--left-button-hover-color);
+}
+.split.right .button:hover {
+    background-color: var(--right-button-hover-color);
+    border-color: var(--right-button-hover-color);
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--container-bg-color);
+    float: left;
+}
+
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left{
+    left: 0;
+    background: url('/img/foodlips.jpg') center center no-repeat;
+    background-size: cover;
+}
+.split.left:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--left-bg-color);
+
+}
+.split.right {
+    right: 0;
+    background: url('/img/nosnap.jpg') center center no-repeat;
+    background-size: cover;
+}
+.split.right:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--right-bg-color);
+
+}
+.split.left, .split.right, .split.right:before, split.left:before {
+    transition: var(--speed) all ease-in-out;
+}
+.hover-left .left {
+    width: var(--hover-width);
+}
+
+.hover-left .right {
+    width: var(--other-width);
+}
+.hover-left .right:before {
+    z-index: 2;
+
+}
+.hover-right .right {
+    width: var(--hover-width);
+}
+
+.hover-right .left {
+    width: var(--other-width);
+}
+.hover-right .left:before {
+    z-index: 2;
+}
+@media(max-width: 700px){
+    h1{
+        font-size: 4rem;
+    }
+    .button {
+        width: 10rem;
+    }
+}
+@media(max-height: 700px){
+    .button {
+        top: 70%;
+    }
+    p {
+     top: 60%;
+  }
+}
+
+#noApptPage {
+  background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      var(--right-bg-color), 
+      var(--right-bg-color)
+    ),
+    /* bottom, image */
+    url('img/nosnap.jpg') top center no-repeat;
+}
+
+#snapBranch {
+    background: url('img/foodlips.jpg')center center no-repeat;
+}
+
+ .row {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
+  height: 100vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  background-image: linear-gradient(90deg, rgba(223,39,39, .6) 33.33%, rgba(178,153,153, .6) 33.33%, rgba(178,153,153, .7) 66.66%, rgba(223,39,39, .7) 66.66%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0px;
+  }
+
+  
+

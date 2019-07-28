@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Ubuntu&display=swap" rel="stylesheet">
+    <title>Snap Screening!</title>
+   
+  </head>  
+  <body>
+    <div class="container">
+    <div class="split left">
+        <h1>SNAP</h1>
+        <button class="button" id="snapButton">Read More</button>
+    </div>
+    <div class="split right">
+        <h1>No SNAP</h1>
+        <button class="button noAppt" id="noSnapButton">Read More</button>
+    </div>
+  </div>
+    
+  <div class="container" id="noApptPage">
+    <h1>
+      Congratulations!
+    </h1>
+    <p>
+    You don't have to schedule any appointment or print any paper!<br>
+    Unless there is a new TANF application. See your senior worker!
+    </p>
+  </div>
+
+  <div class="container columns" id="snapBranch">
+      <div class="row">
+      <div class="column left">
+        <button class="threeColumns noAppt">Renewal</button>
+        <p>
+          
+        </p>
+      </div>
+      <div class="column middle">
+        
+      <button class="threeColumns noAppt">Change/Add person</button>
+        <p>
+          
+        </p>
+      </div>
+      <div class="column right">
+      <button class="threeColumns">Do not convert</button>
+        <p>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+   
+
+  <div class="container" id="fourDays">
+    <div>
+      <p>
+        Schedule the appointment within the first four days. 
+      </p>
+    </div>
+    <div>
+    <p>Worker has no availability!</p>
+    <button>Continue</button>
+    </div>
+    </div>
+
+    <div class="container">
+      <div class="column">
+        <button class="button">
+        Expedited
+        </button>
+      </div>
+      <div class="column">
+        <button class="button">
+        Not Expedited
+        </button>
+        
+      </div>
+    </div>
+
+
+  <div class="container" id="expeditedSnap">
+    <p>
+     If the worker is not available, then schedule the interview as soon as the worker is available from day
+       five to seven.  If the worker is still not available, do not schedule the appointment.  Screenshot the worker's unavailability and email worker, cc worker's
+      supervisor, CSS supervisor, and benefits manager.
+    </p>
+  </div>
+
+  <div class="container" id="notExpeditedSnap">
+    <p>
+     If the worker is not available, then schedule the interview as soon as the worker is available from day
+     five to thirty.
+    </p>
+  </div> 
+   <script src="/index.js" defer></script>
+</body>
+</html>
