@@ -107,7 +107,7 @@ button:focus, button {
     left: 0;
 }
 .snap {
-  background: url("./img/foodlips1.jpg") center center no-repeat;
+  background: url("/foodlips1.c879bd31.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -124,7 +124,7 @@ button:focus, button {
     right: 0;
 }
 .no-snap {
-  background: url("./img/nosnap1.jpg") center center no-repeat;
+  background: url("/nosnap1.3f7d83ed.jpg") center center no-repeat;
   background-size: cover;
 }
 
@@ -164,7 +164,7 @@ button:focus, button {
 
 .three-columns {
     background: linear-gradient(90deg, rgba(223,39,39, .6) 33.33%, rgba(95,95,95, .6) 33.33%, rgba(95,95,95, .7) 66.66%, rgba(223,39,39, .7) 66.66%),
-                url("./img/foodlips1.jpg")center center no-repeat;
+                url("/foodlips1.c879bd31.jpg")center center no-repeat;
 /*     background-size: cover; */
 
 }
@@ -176,8 +176,8 @@ button:focus, button {
     align-items: center;
     background: 
     linear-gradient( rgba(223,39,39, .6) 0%, rgba(223,39,39, .6) 50%, rgba(121, 67, 67, 0.7) 50%,rgba(109, 88, 88, 0.8) 100%),
-    /* bottom, image */
-    url(./img/four-upside-down.jpg) fixed top no-repeat;
+    
+    url(/four-upside-down.5b5ccfee.jpg) fixed top no-repeat;
   }
 #four-days-else h2 {
     top: 20%;
@@ -222,8 +222,8 @@ button:focus, button {
         var(--right-bg-color), 
         var(--right-bg-color)
       ),
-      /* bottom, image */
-      url("./img/congrats.jpg") top center no-repeat;
+      
+      url("/congrats.1afe44e0.jpg") top center no-repeat;
       background-size: cover;
 }
 
@@ -262,3 +262,6 @@ button:focus, button {
     align-items: space-between;
   }
 }
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
